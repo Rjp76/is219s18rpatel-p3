@@ -131,7 +131,6 @@ app.controller('HomeController', ['$scope', function($scope) {
       dislikes:   5985,
       posterindex: 0
       }
-      s
       
   ];
       
