@@ -31,11 +31,9 @@
       </div>
 
     <div class="main">
-      
       <div class="container" ng-controller="HomeController" >
-
-        <div class="col-md-6"> 
-            <div class="thumbnail" ng-repeat="m in movies">
+      		<div class="col-md-6" ng-repeat="m in movies"> 
+            <div class="thumbnail" >
 
 					<img class="poster" src="{{m.posters[m.posterindex]}}" ng-click="posterClick($index)"/> 
 					<div class="imageInfo" >Poster {{m.posterindex+1}} of {{m.posters.length }}</div>
@@ -54,6 +52,7 @@
         </div>
 
       </div>
+  </div>
     </div>
 
     <div class="footer">

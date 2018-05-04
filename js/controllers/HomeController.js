@@ -132,17 +132,14 @@ app.controller('HomeController', ['$scope', function($scope) {
       posterindex: 0
       }
       
+      
   ];
       
       /* ADD VARIABLES FOR STEP 3 HERE */
       $scope.title = "IMDB + Rati's Top 8 Movies";
       $scope.owner = "Rati Patel";
       $scope.github = "https://github.com/Rjp76/is219s18RPatel-P3";
-      
-      
-      
-      
-      
+
       
       
       /* ADD FUNCTIONS FOR STEP 7 HERE */
@@ -163,7 +160,6 @@ app.controller('HomeController', ['$scope', function($scope) {
       $scope.timeText = function timeText(minutes) {
             return (Math.floor(minutes/60) + "h " + minutes%60 + "m");
       };
-      
-      
+
       
 }]);
