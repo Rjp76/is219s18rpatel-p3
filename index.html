@@ -36,18 +36,18 @@
         <div class="col-md-6"> 
             <div class="thumbnail" ng-repeat="m in movies">
 
-					<img class="poster"/ > 
-					<div class="imageInfo" >{{ m.posterindex }}</div>
+					<img class="poster"  src="{{m.posters[m.posterindex]}}" ng-click="posterClick($index)"/> 
+					<div class="imageInfo" >Poster {{m.posterindex}} of {{m.posters.length + 1}}</div>
 					
 					<p class="title" >{{ m.title }} ({{ m.country }})</p> 
-					<p class="score"><i class="fa fa-star" aria-hidden="true"></i> %iscore% </p>
+					<p class="score"><i class="fa fa-star" aria-hidden="true"></i> {{m.iscore}} </p>
 					<p class="runtime" >Runtime: {{timeText(m.runtime)}} </p> 
 					<p class="released">Released: {{m.movies.title}} | Rated: {{m.rating}}</p>
 					<p class="websites" >Websites: <a ng-href="{{m.imdb}}">IMDB</a> | <a ng-href="{{m.website}}">Official</a></p>
 					
 		            <div class="social">
-		              <p class="likes" ng-click="like($index)"><i class="fa fa-thumbs-up"></i> {{ m.likes }}</p>
-		              <p class="dislikes" ng-click="dislike($index)"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{m.dislikes}}</p>
+		              <p class="likes fade-in" ng-click="like($index)"><i class="fa fa-thumbs-up"></i> {{ m.likes }}</p>
+		              <p class="dislikes fade-in" ng-click="dislike($index)"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{m.dislikes}}</p>
 		            </div>
             </div> 
         </div>
