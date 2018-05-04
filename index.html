@@ -33,11 +33,11 @@
       
       <div class="container" ng-controller="HomeController" >
 
-        <div class="col-md-6"> 
+        <div class="col-md-6 col-sm-6"> 
             <div class="thumbnail" ng-repeat="m in movies">
 
-					<img class="poster"  src="{{m.posters[m.posterindex]}}" ng-click="posterClick($index)"/> 
-					<div class="imageInfo" >Poster {{m.posterindex}} of {{m.posters.length + 1}}</div>
+					<img class="poster" src="{{m.posters[m.posterindex]}}" ng-click="posterClick($index)"/> 
+					<div class="imageInfo" >Poster {{m.posterindex+1}} of {{m.posters.length }}</div>
 					
 					<p class="title" >{{ m.title }} ({{ m.country }})</p> 
 					<p class="score"><i class="fa fa-star" aria-hidden="true"></i> {{m.iscore}} </p>
