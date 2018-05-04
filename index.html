@@ -41,7 +41,7 @@
 					<p class="title" >{{ m.title }} ({{ m.country }})</p> 
 					<p class="score"><i class="fa fa-star" aria-hidden="true"></i> {{m.iscore}} </p>
 					<p class="runtime" >Runtime: {{timeText(m.runtime)}} </p> 
-					<p class="released">Released: {{m.movies.title}} | Rated: {{m.rating}}</p>
+					<p class="released">Released: {{m.released | date}} | Rated: {{m.rating}}</p>
 					<p class="websites" >Websites: <a ng-href="{{m.imdb}}">IMDB</a> | <a ng-href="{{m.website}}">Official</a></p>
 					
 		            <div class="social">
