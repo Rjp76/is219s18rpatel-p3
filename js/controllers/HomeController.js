@@ -104,34 +104,34 @@ app.controller('HomeController', ['$scope', function($scope) {
       posterindex: 0
       },
           { 
-      title:      'The Shawshank Redemption', 
-      iscore:     9.3,
-      rating:     'R',
-      runtime:    142,
-      released:   new Date('1994', '10', '14'),
+      title:      'The Book of Life', 
+      iscore:     7.3,
+      rating:     'PG',
+      runtime:    95,
+      released:   new Date('2014', '10', '17'),
       country:    'USA',
-      posters:    ['img/shawshank.jpg','img/shawshank2.jpg','img/shawshank3.jpg'],
-      imdb:       'http://www.imdb.com/title/tt0111161',
-      website:    'https://www.facebook.com/ShawshankRedemptionFilm',
-      likes:      1021,
-      dislikes:   122,
+      posters:    ['img/bol2.jpg','img/bol3.jpg', 'img/bol4.jpg'],
+      imdb:       'https://www.imdb.com/title/tt2262227/',
+      website:    'http://www.bookoflifemovie.com',
+      likes:      1017,
+      dislikes:   69,
       posterindex: 0
       },
           { 
-      title:      'The Shawshank Redemption', 
-      iscore:     9.3,
+      title:      'The Room', 
+      iscore:     3.6,
       rating:     'R',
-      runtime:    142,
-      released:   new Date('1994', '10', '14'),
+      runtime:    99,
+      released:   new Date('2004', '3', '3'),
       country:    'USA',
-      posters:    ['img/shawshank.jpg','img/shawshank2.jpg','img/shawshank3.jpg'],
-      imdb:       'http://www.imdb.com/title/tt0111161',
-      website:    'https://www.facebook.com/ShawshankRedemptionFilm',
-      likes:      1021,
-      dislikes:   122,
+      posters:    ['img/theroom1.jpg','img/theroom2.jpg'],
+      imdb:       'https://www.imdb.com/title/tt0368226/',
+      website:    'http://www.theroommovie.com/',
+      likes:      333,
+      dislikes:   5985,
       posterindex: 0
       }
-      
+      s
       
   ];
       
